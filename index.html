@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSans.css" rel="stylesheet">
 	</style>
 
 <head>
@@ -11,25 +11,24 @@
 
 	<style type="text/css">
 
-		body{margin: 0px}
+		body{margin: 0px;}
 		nav{background: rgb(18, 55, 143);position: fixed; width: 100%; top: 0; left: 0; right: 0}
+		nav{z-index: 1}
 		li{list-style-type: none;}
 	
-		.navwrap{width: 1600px; margin: auto;}
-		.wrap{width: 1570px; margin: auto;}
+		.navwrap{width: 1200px; margin: auto;}
+		.wrap{width: 1170px; margin: auto;}
+		.wrap2{width: 1570px; margin: auto;}
 		.flex{display: flex; justify-content: space-between;}
+		.flex2{display: flex; white-space: nowrap; gap: 40px}
+
 		.menu{width: 300px}
 		.menu li a{text-decoration: none;color: white ;padding:3px; display: block;}
-		.menu li a:hover{font-weight: bold; text-decoration: underline; text-underline-offset: 7px}
+		.menu li a:hover{font-weight: bold; text-decoration: none; color: rgb(89, 194, 229);}
 
-		.pr{font-family: Noto Sans Kr; font-weight: 600; line-height: 1.8}
-		.pr400{font-family: Noto Sans Kr; font-weight: 400; line-height: 1.8}
-		@font-face {
-		    font-family: 'GmarketSansbold';
-		    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansbold.woff') format('woff');
-		    font-weight: normal;
-		    font-style: normal;
-		}
+		.pr{font-family: Noto Sans KR; font-weight: 600; line-height: 1.8}
+		.pr400{font-family: Noto Sans KR; font-weight: 400; line-height: 1.8}
+		
 		.gm{font-family:GmarketSansbold; font-weight: 700; line-height: 1.8}
 		.lh{line-height: 2.0}
 		.lh2{line-height: 1.0}
@@ -50,6 +49,7 @@
 		.white{color: white;}
 		.navy{color: rgb(18, 55, 143)}
 		.bnavy{background-color: rgb(18, 55, 143); width: 100%; left: 0; right: 0}
+		.bnavy2{background-color: rgb(18, 55, 143); width: 450px;left: 0; right: 0; margin: auto}
 		.penut{color: rgb(236, 186, 122);}
 		.bpenut{background-color: rgb(236, 186, 122); width: 100%; left: 0; right: 0}
 		.red{color: rgb(213, 55, 51);}
@@ -63,46 +63,65 @@
 		}
 
 		.m100{margin-top: 100px; margin-bottom: 100px}
+		.mauto{ width: 80%; margin: 0 auto}
 
-		.ptb5{padding-top: 5px; padding-bottom: 5px}
+		.ptb5{padding: 5px 5px}
 		.p10{padding: 10px}
-		.ptb10{padding-top: 10px; padding-bottom: 10px}
+		.ptb10{padding: 10px 10px}
 		.p15{padding: 15px}
 		.p20{padding: 20px}
 		.ptb20{padding-top: 20px; padding-bottom: 20px}
 		.p40{padding: 40px}
 		.p-b40{padding-bottom: 40px}
 		.ptb40{padding-top: 40px; padding-bottom: 40px}
+		.pd-t50{padding-top: 50px;}
 		.p80{padding: 80px}
 		.ptb80{padding-top: 80px; padding-bottom: 80px}
 		.pd-b100{padding-bottom: 100px; }
 		.pd-t100{padding-top: 100px;}
+		.pd-t120{padding-top: 120px;}
 		.ptb100{padding-top: 100px; padding-bottom: 100px}
+		.ptb110{padding-top: 110px; padding-bottom: 110px}
 		.pd-t200{padding-top: 200px; }
 		.ptb200{padding-top: 200px; padding-bottom: 200px}
 		.ptb300{padding-top: 300px; padding-bottom: 300px}
+		.pd-t350{padding-top: 350px;}
+		.ptb500{padding-top: 500px; padding-bottom: 500px}
 		.t140b20{padding-top: 140px; padding-bottom: 20px}
-		.t580b40{padding-top: 580px; padding-bottom: 40px}
+		.t730{padding-top: 730px;}
+		.t100b200{padding-top: 100px ;padding-bottom:200px}
+
+		.phouse{padding-top: 10px ; padding-bottom:70px ; padding-left:0px ;padding-right:100px}
+		.preceipt{padding-top: 40px ; padding-bottom:40px ; padding-left:0px ;padding-right:50px}
+		.pbox{padding-top: 30px ; padding-bottom:50px ; padding-left:0px ;padding-right:0px}
+		.ptext{padding-top: 600px ;}
+
+		.vh100{height: 100vh}
 
 		.rel{position: relative;}
-		.ab1{position: absolute; top: 280px; left: 280px }
-		.ab2{position: absolute; top: 280px; left: 683px }
-		.ab3{position: absolute; top: 280px; left: 1073px }
-		.ab-home{position: absolute; top: 80px; left: 30px }
-		.ab-stuff{position: absolute; top: 80px; right: 30px }
+		.ab1{position: absolute; top: 300px; left: -15px }
+		.ab2{position: absolute; top: 300px; left: 475px }
+		.ab3{position: absolute; top: 300px; right: -15px }
+		.ab-home{position: absolute; top: 80px; left: 70px }
+		.ab-stuff{position: absolute; top: 80px; right: 70px }
+		.abpenut{position: absolute; top:95px; right: 10px}
+		.abpenut2{position: absolute; top:95px; right: 10px}
+		.abwhitebox{position: absolute; top:100px; right: -30px}
+		.abpenut3{position: absolute; top:500px; right: 600px}
+		.abstuffs2{position: absolute; top:150px; right: 450px}
 
-
+		.whitebox{background-color: white; width: 300px; height: 250px;}
 		.box1{background-color: gray; width: 500px; height: 500px; margin: auto; }
 		.box2{background-color: gray; width: 400px; height: 400px; margin: auto; }
-		.box3{background-color: gray; width: 200px; height: 200px; margin: auto; }
+		.box3{width: 200px; height: 200px; margin: auto; }
 		.box4{background-color: gray; width: 500px; height: 180px; }
-		.box5-1{background-color: gray; width: 500px; height: 500px; margin: auto; }
+		.box5-1{width: 500px; height: 500px; margin: auto; }
 		.box5-1{animation: box5-1 2.5s ease-in-out infinite; animation-direction: alternate;}
 		@keyframes box5-1{
 			from{transform: scale(0.2)};
 			to{transform: scale(1);}
 		}
-		.box5-2{background-color: gray; width: 500px; height: 500px; margin: auto; }
+		.box5-2{width: 500px; height: 500px; margin: auto; }
 		.box5-2{animation: box5-2 2.5s ease-in-out infinite ; animation-direction: alternate;}
 		@keyframes box5-2{to{transform: scale(0.2);}}
 
@@ -113,6 +132,81 @@
 
 		.img180{height: 180px;}
 		.bg-pic{background: url(penut-b.png); background-size: cover; background-attachment: fixed;}
+		.bg-pic2{background: url(spilled.png); background-size: cover; background-attachment: fixed;}
+
+		.scroll-container{
+			overflow: hidden;
+			white-space: nowrap;
+			width: 100%;
+			position: relative;
+		}
+		.scroll{
+			display: inline-block;
+			white-space: nowrap;
+			animation: scroll 10s linear infinite;
+			position: relative;
+		}
+		@keyframes scroll{
+			0%{transform: translateX(0);}
+			100%{transform: translateX(-50%);}
+		}
+
+		.scroll-container2{
+			overflow: hidden;
+			white-space: nowrap;
+			width: 100%;
+			position: relative;
+		}
+		.scroll2{
+			display: inline-block;
+			white-space: nowrap;
+			animation: scroll2 10s linear infinite;
+			position: relative;
+		}
+		@keyframes scroll2{
+			0%{transform: translateX(-130%);}
+			100%{transform: translateX(130%);}
+		}
+
+		.rotate-45{animation: rotate-45 2s linear infinite; transform-origin: right center;}
+		@keyframes rotate-45{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(-45deg);}
+			100%{transform: rotate(0deg);}
+		}
+
+		.rotate45{animation: rotate45 2s linear infinite; transform-origin: right center;}
+		@keyframes rotate45{
+			0%{transform: rotate(0deg);}
+			50%{transform: rotate(45deg);}
+			100%{transform: rotate(0deg);}
+		}
+
+		.rotate-135{animation: rotate-135 0.8s cubic-bezier(0.4, 0, 1, 1)  forwards; transform-origin: right center;}
+		@keyframes rotate-135{
+			0%{transform: rotate(90deg);}
+			100%{transform: rotate(45deg);}
+		}
+
+		.rotate135{animation: rotate135 0.8s cubic-bezier(0.4, 0, 1, 1)  forwards; transform-origin: right center;}
+		@keyframes rotate135{
+			0%{transform: rotate(90deg);}
+			100%{transform: rotate(135deg);}
+		}
+		.popup{animation: popup 0.8s cubic-bezier(0.4, 0, 1, 1) forwards; transform-origin: bottom center;}
+		@keyframes popup{
+			0%{transform: scale(0.0);}
+			100%{transform: scale(1.0);}
+		}
+
+		.invert:hover {
+			filter: invert(100%);
+		}
+		.rotate-hover{transition: transform 1s ease-in-out;}
+		.rotate-hover:hover{transform: rotateY(360deg);}
+
+		.sticky{position: sticky; top: 0; bottom: 0;left: 0; right: 0; }
+		.sticky-container{height: 100vh}
 
 
 	</style>
@@ -120,7 +214,7 @@
 <body>
 	<nav>
 		<div class="navwrap flex">
-			<div class="gm white pt16 p15">Da_nut</div>
+			<div class="gm white pt16 p15">da_nut</div>
 		<ul class="menu flex gm pt10">
 			<li><a>About</a></li>
 			<li><a>Service</a></li>
@@ -128,124 +222,204 @@
 	</div>
 	</nav>
 
-	<section class="wrap ptb100">
+	<section class="wrap pd-t120 pd-b100">
 		<div class="pt32 navy pr">다-넣어드립니다</div>
-		<div class="flex t140b20">
-			<div class="p10"><img src="books.png" class="img180"></div>
-			<div class="p10"><img src="washing-m.png" class="img180"></div>
-			<div class="p10"><img src="tshirts.png" class="img180"></div>
-			<div class="p10"><img src="bag.png" class="img180"></div>
-			<div class="p10"><img src="bed.png" class="img180"></div>
-			<div class="box4"></div>
+		<div class="scroll-container2 ptb110">
+			<div class="scroll2 flex2">
+				<span class="p10"><img src="books.png" class="img180"></span>
+				<span class="p10"><img src="washing-m.png" class="img180"></span>
+				<span class="p10"><img src="tshirts.png" class="img180"></span>
+				<span class="p10"><img src="bag.png" class="img180"></span>
+				<span class="p10"><img src="bed.png" class="img180"></span>
+			</span>
 		</div>
-		<div class="right gm pt120 lightblue">Da<span class="penut">_</span>nut</div>
+		<div class="abwhitebox">
+			<div class="whitebox"></div>
+		</div>
+		<div class="abpenut">
+			<img class="rotate-45" src="penut1.png" height="200px">
+		</div>
+		<div class="abpenut2">
+			<img class="rotate45" src="penut2.png" height="200px">
+		</div>
+
+		<div class="right gm pt120 lightblue pd-t50">da<span class="penut">_</span>nut</div>
 	</section>
 
-	<section class="wrap ptb200 center rel">
+	<section class="wrap2 ptb200 center rel">
 		<div class="p40 pt24 navy pr ptb er">물건은 점점 늘어나는데</div>
 		<div class="ab-home">
-			<div class="box5-1"></div>
+			<div class="box5-1">
+				<img src="house.png" width="500px">
+			</div>
 		</div>
 		<div class="ab-stuff">
-			<div class="box5-2"></div>
+			<div class="box5-2">
+				<img src="stuffs.png" height="500px">
+			</div>
 		</div>
 		<div class="p40 pt24 navy pr er">내 집은 점점 좁아진다?!</div>
 	</section>
 
 	<section class="wrap ptb200 center">
-		<div class="pt24 navy pr">쓰지도 버리지도 못하는 당신을 위해<br><span class="gm lightblue">Da<span class="penut">_</span>nut</span>이 나섰습니다!</div>
+		<div class="pt24 navy pr">쓰지도 버리지도 못하는 당신을 위해<br><span class="gm lightblue">da<span class="penut">_</span>nut</span>이 나섰습니다!</div>
 	</section>
 
 	<section class="bnavy center m100">
-		<div class="bg-pic pt32 navy pr p80">보관부터 처분까지<br><span class="gm ">Da<span class="lightblue">_</span>nut</span>이<br>다~해드려요</div>
+		<div class="bg-pic pt32 navy pr p80">보관부터 처분까지<br><span class="gm ">da<span class="lightblue">_</span>nut</span>이<br>다~해드려요</div>
 	</section>
 
 	<section class="wrap ptb100">
-		<div class="pr lightblue pt24">그럼 이제, 다~넣어드릴까요?<br><span class="pr penut pt20"><span class="gm">Da_nut</span>은 이런 서비스입니다</span></div>
+		<div class="pr lightblue pt24">그럼 이제, 다~넣어드릴까요?<br><span class="pr penut pt20"><span class="gm">da_nut</span>은 이런 서비스입니다</span></div>
 	</section>
-	<section class="wrap pd-b100">
-		<div class="center navy pt20 pr"><span class="gm">Da_nut</span>은 상품가치가 있는 물건에 한해<br>일정 기간동안 보관해드리는 서비스입니다</div>
-		<div class="box2 margin-auto"><img src="penut.img" class="p40"></div>
-		<div class="center penut pt10 pr">사용자는 보관 기간 중 아무때나 보관 물품을 가져갈 수 있어요</div>
+	<section class="wrap pd-b100 rel">
+		<div class="center navy pt20 pr"><span class="gm">da_nut</span>은 상품가치가 있는 물건에 한해<br>일정 기간동안 보관해드리는 서비스입니다</div>
+
+		<div class="abstuffs2">
+			<img class="popup" src="stuffs2.png" height="300px">
+		</div>
+		<div class="abpenut3">
+			<img class="rotate-135" src="penut1.png" height="200px">
+		</div>
+		<div class="abpenut3">
+			<img class="rotate135" src="penut2.png" height="200px">
+		</div>
+
+		<div class="center penut pt10 pr ptext">사용자는 보관 기간 중 아무때나 보관 물품을 가져갈 수 있어요</div>
 	</section>
 
-	<section class="wrap ptb100 center">
+	<section class="wrap t100b200 center">
 		<div class="pr pt24 white bred ptb20 blink">하<span class="lightblue">.</span>지<span class="lightblue">.</span>만<span class="lightblue">.</span> 보관기간이 끝난다면?</div>
 	</section>
 
-	<section class="wrap ptb100 center">
-		<div class="pr pt24 navy "><span class="gm lightblue">Da<span class="penut">_</span>nut</span>에 보관하신 물건을</div>
-		<div class="pr pt24 navy "><span class="gm lightblue">Da<span class="penut">_</span>nut</span>이 처분해드려요~</div>
-		<div class="pr pt10 penut pd-t100">처분 이후에는 소유권을 주장하실 수 없습니다<br>처분 시 발생되는 금전적 이익의 소유권은(주)<span class="gm">Da_nut</span>에 있습니다</div>
+	<section class="bg-pic2 ptb300 center">
+		<div class="wrap">
+			<div class="bnavy2 p10">
+				<div class="pr pt24 white"><span class="gm lightblue">da<span class="penut">_</span>nut</span>에 보관하신 물건을</div>
+				<div class="pr pt24 white "><span class="gm lightblue">da<span class="penut">_</span>nut</span>이 처분해드려요~</div>
+			</div>
+			<div class="pr pt10 penut pd-t100">처분 이후에는 소유권을 주장하실 수 없습니다<br>처분 시 발생되는 금전적 이익의 소유권은(주)<span class="gm">da_nut</span>에 있습니다</div>
+		</div>
 	</section>
 
-	<section class="ptb100">
-		<div class="flex">
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
-			<div class="gm lightblue pt24 p10">Da<span class="penut">_</span>nut</div>
+	<section class="scroll-container ptb100">
+		<div class="scroll">
+			<div class="gm lightblue pt24 p10 flex2">
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+			</div>
 		</div>
 	</section>
 
 	<section class="wrap ptb100 rel">
-		<div class="pr lightblue pt24"><span class="gm">Da<span class="penut">_</span>nut</span>은 어떻게 이용하나요?</div>
-		<div class="pr penut pt20"><span class="gm">Da_nut</span> 사용법</div>
-		<div class="ab1">
-			<div class="pr red pt20 center">step 1</div>
-			<div class="box3"><img src="box"></div>
-			<div class="pr navy pt20 center">버리기 아까운 물건을<br>가까운 <span class="gm">Da_nut</span><br>매장에 가져간다</div>
+		<div class="pr lightblue pt24"><span class="gm">da<span class="penut">_</span>nut</span>은 어떻게 이용하나요?</div>
+		<div class="pr penut pt20"><span class="gm">da_nut</span> 사용법</div>
+		<div class="ab1 rotate-hover">
+			<div class="pr red pt20 center p20">step 1</div>
+			<div class="box3 p20 pbox"><img src="box.png" height="240px" ></div>
+			<div class="pr navy pt20 center p20">버리기 아까운 물건을<br>가까운 <span class="gm">da_nut</span><br>매장에 가져간다</div>
 		</div>
-		<div class="ab2">
-			<div class="pr red pt20 center">step 2</div>
-			<div class="box3"><img src="receipt"></div>
-			<div class="pr navy pt20 center">원하는 옵션을<br>선택한 후<br>신청서를 작성한다</div>
+		<div class="ab2 rotate-hover">
+			<div class="pr red pt20 center p20">step 2</div>
+			<div class="box3 p20 preceipt"><img src="receipt.png" height="240px"></div>
+			<div class="pr navy pt20 center p20">원하는 옵션을<br>선택한 후<br>신청서를 작성한다</div>
 		</div>
-		<div class="ab3">
-			<div class="pr red pt20 center">step 3</div>
-			<div class="box3"><img src="home"></div>
-			<div class="pr navy pt20 center">넓어진 공간을<br>만끽한다</div>
+		<div class="ab3 rotate-hover">
+			<div class="pr red pt20 center p20">step 3</div>
+			<div class="box3 p20 phouse"><img src="house.png" height="300px" class="center"></div>
+			<div class="pr navy pt20 center p20">넓어진 공간을<br>만끽한다</div>
 		</div>
-		<div class=" pr penut pt10 center t580b40">보관기간과 보관하시는 물품의 양에 따라 결제 금액이 달라질 수 있습니다.</div>
+		<div class=" pr penut pt10 center t730">보관기간과 보관하시는 물품의 양에 따라 결제 금액이 달라질 수 있습니다.</div>
 		</div>
 	</section>
 
+	<section class="scroll-container ptb100">
+		<div class="scroll">
+			<div class="gm lightblue pt24 p10 flex2">
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+				<span>da<span class="penut">_</span>nut</span>
+			</div>
+		</div>
+	</section>
+	<section class="wrap sticky-container">
+		<div class="sticky">
+			<div class="pr lightblue pt24 center pd-t350">안 되는 것 빼고 다 되는<span class="gm">da<span class="penut">_</span>nut</span>이지만...</div>
+		</div>
 	</section>
 
-	<section class="wrap ptb100">
-		<div class="pr lightblue pt32">이런 물건은 안 돼요!</div>
-		<div class="pr penut pt20">주의사항</div>
-	</section>
+	<section class="bnavy slide">
+		<section class="wrap pd-t100 ">
+			<div class="pr lightblue pt24">이런 물건은 안 돼요!</div>
+			<div class="pr penut pt20">주의사항</div>
+		</section>
 
-	<section class="wrap ptb100">
-		<div class="pr navy pt20">상품가치가 과도하게 훼손된 물품</div>
-		<div class="pr red pt16">쓰레기는 쓰레기통에!</div>
-		<div class="box1"></div>
-	</section>
+		<section class="wrap ptb100">
+			<div class="pr white pt20">상품가치가 과도하게 훼손된 물품</div>
+			<div class="pr red pt16">쓰레기는 쓰레기통에!</div>
+			<div class="p80 center"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExczlyM3QwNWw4dWVqN2dvaXUxbHh2NXJic3Vtd2FuODRobHp6NGFtYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QVP7DawXZitKYg3AX5/giphy.gif" class="invert" width="800px"></div>
+		</section>
 
-	<section class="wrap ptb100">
-		<div class="pr navy pt20">사랑이 필요한 생명</div>
-		<div class="pr red pt16">개미도 씨몽키도 예외는 아니에요</div>
-		<div class="box1"><img src=""></div>
-	</section>
+		<section class="wrap pd-b100">
+			<div class="pr white pt20">사랑이 필요한 생명</div>
+			<div class="pr red pt16">개미도 씨몽키도 예외는 아니에요</div>
+			<div class="p80 center"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGhva3hldmE2bm9xbzU3NjNqdDM5ajlpaHVuaHc1OHI4OGlyNG1xeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kVlFADIdJwVa0/giphy.gif" class="invert" width="800px"></div>
+		</section>
 
-	<section class="wrap ptb100">
-		<div class="pr navy pt20">장물</div>
-		<div class="pr red pt16">Da_nut은 실명제로 운영됩니다</div>
-		<div class="box1"><img src=""></div>
+		<section class="wrap pd-b100">
+			<div class="pr white pt20">장물</div>
+			<div class="pr red pt16"><span class="gm">da_nut</span>은 실명제로 운영됩니다</div>
+			<div class="p80 center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzdxYjRlcjhpMHhqZHU2bDZ2aHR6bjJ2NGpqbDk4bjZ1ZGljNTVwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3Pdfyh4d5ZSAE/giphy.gif" class="invert" width="800px"></div>
+		</section>
 	</section>
 
 	<section class="wrap ptb100 center">
-		<div class="pr navy pt40 pd-t200"><span class="gm lightblue">Da<span class="penut">_</span>nut</span> 사용하시고<br>모두 공간 <span class="lightblue">부<span class="penut">-</span>자</span>되세요</div>
+		<div class="pr navy pt40 pd-t50"><span class="gm lightblue">da<span class="penut">_</span>nut</span> 사용하시고<br>모두 공간 <span class="lightblue">부<span class="penut">-</span>자</span>되세요</div>
 	</section>
 
 	<section class="wrap ptb100 center pr 10pt penut">
-		<div>이용약관<br>이미 처분된 물건에 대해서는 <span class="gm">Da_nut</span>이 관여하지 않습니다.<br>보관할 뭂품의 상태에 따라 보관료가 책정되며 경우에 따라 가격은 변동될 수 있습니다.<br>유효 기간 만료에 대해서는 별도의 안내를 드리지 않습니다.<br>처분 시 발생한 금전적 이득의 소유권은 (주)<span class="gm">Da_nut</span>에 있습니다.</div>
+		<div>이용약관<br>이미 처분된 물건에 대해서는 <span class="gm">da_nut</span>이 관여하지 않습니다.<br>보관할 물품의 상태에 따라 보관료가 책정되며 경우에 따라 가격은 변동될 수 있습니다.<br>유효 기간 만료에 대해서는 별도의 안내를 드리지 않습니다.<br>처분 시 발생한 금전적 이득의 소유권은 (주)<span class="gm">da_nut</span>에 있습니다.</div>
 	</section>
 
 	<section class="bnavy">
