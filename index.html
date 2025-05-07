@@ -2,6 +2,13 @@
 <html>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSans.css" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+		font-family: 'GmarketSansBold';
+		src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		}
 	</style>
 
 <head>
@@ -26,7 +33,7 @@
 		.menu li a{text-decoration: none;color: white ;padding:3px; display: block;}
 		.menu li a:hover{font-weight: bold; text-decoration: none; color: rgb(89, 194, 229);}
 
-		.pr{font-family: Noto Sans KR; font-weight: 600; line-height: 1.8}
+		.pr{font-family: Noto Sans KR; font-weight: 600; }
 		.pr400{font-family: Noto Sans KR; font-weight: 400; line-height: 1.8}
 		
 		.gm{font-family:GmarketSansbold; font-weight: 700; line-height: 1.8}
@@ -35,14 +42,14 @@
 
 		.center{text-align: center;}
 		.right{text-align: right;}
-		.pt10{font-size: 12pt}
-		.pt16{font-size: 16pt}
-		.pt20{font-size: 20pt}
-		.pt24{font-size: 24pt}
-		.pt32{font-size: 32pt}
-		.pt40{font-size: 40pt}
-		.pt48{font-size: 48pt}
-		.pt120{font-size: 120pt}
+		.pt10{font-size: 12pt ;line-height: 1.8}
+		.pt16{font-size: 16pt ;line-height: 1.8}
+		.pt20{font-size: 20pt ;line-height: 1.2}
+		.pt24{font-size: 24pt ;line-height: 1.2}
+		.pt32{font-size: 32pt ;line-height: 1.2}
+		.pt40{font-size: 40pt ;line-height: 1.2}
+		.pt48{font-size: 48pt ;line-height: 1.2}
+		.pt120{font-size: 120pt ;line-height: 1.2}
 
 		.lightblue{color: rgb(89, 194, 229)}
 		.bightblue{background-color: rgb(89, 194, 229);width: 100%; height: 15px}
@@ -91,9 +98,9 @@
 		.t730{padding-top: 730px;}
 		.t100b200{padding-top: 100px ;padding-bottom:200px}
 
-		.phouse{padding-top: 10px ; padding-bottom:70px ; padding-left:0px ;padding-right:100px}
-		.preceipt{padding-top: 40px ; padding-bottom:40px ; padding-left:0px ;padding-right:50px}
-		.pbox{padding-top: 30px ; padding-bottom:50px ; padding-left:0px ;padding-right:0px}
+		.phouse{padding-top: 0px ; padding-bottom:40px ; padding-left:0px ;padding-right:100px}
+		.preceipt{padding-top: 00px ; padding-bottom:40px ; padding-left:0px ;padding-right:50px}
+		.pbox{padding-top: 0px ; padding-bottom:40px ; padding-left:0px ;padding-right:0px}
 		.ptext{padding-top: 600px ;}
 
 		.vh100{height: 100vh}
@@ -203,7 +210,7 @@
 			filter: invert(100%);
 		}
 		.rotate-hover{transition: transform 1s ease-in-out;}
-		.rotate-hover:hover{transform: rotateY(360deg);}
+		.rotate-hover:hover{transform: rotateY(180deg);}
 
 		.sticky{position: sticky; top: 0; bottom: 0;left: 0; right: 0; }
 		.sticky-container{height: 100vh}
@@ -270,7 +277,7 @@
 	</section>
 
 	<section class="wrap ptb100">
-		<div class="pr lightblue pt24">그럼 이제, 다~넣어드릴까요?<br><span class="pr penut pt20"><span class="gm">da_nut</span>은 이런 서비스입니다</span></div>
+		<div class="pr lightblue pt32">그럼 이제, 다~넣어드릴까요?<br><span class="pr penut pt20"><span class="gm">da_nut</span>은 이런 서비스입니다</span></div>
 	</section>
 	<section class="wrap pd-b100 rel">
 		<div class="center navy pt20 pr"><span class="gm">da_nut</span>은 상품가치가 있는 물건에 한해<br>일정 기간동안 보관해드리는 서비스입니다</div>
@@ -295,8 +302,7 @@
 	<section class="bg-pic2 ptb300 center">
 		<div class="wrap">
 			<div class="bnavy2 p10">
-				<div class="pr pt24 white"><span class="gm lightblue">da<span class="penut">_</span>nut</span>에 보관하신 물건을</div>
-				<div class="pr pt24 white "><span class="gm lightblue">da<span class="penut">_</span>nut</span>이 처분해드려요~</div>
+				<div class="pr pt24 white"><span class="gm lightblue">da<span class="penut">_</span>nut</span>에 보관하신 물건을<span class="gm lightblue">da<span class="penut">_</span>nut</span>이 처분해드려요~</div>
 			</div>
 			<div class="pr pt10 penut pd-t100">처분 이후에는 소유권을 주장하실 수 없습니다<br>처분 시 발생되는 금전적 이익의 소유권은(주)<span class="gm">da_nut</span>에 있습니다</div>
 		</div>
@@ -333,7 +339,7 @@
 	</section>
 
 	<section class="wrap ptb100 rel">
-		<div class="pr lightblue pt24"><span class="gm">da<span class="penut">_</span>nut</span>은 어떻게 이용하나요?</div>
+		<div class="pr lightblue pt32"><span class="gm">da<span class="penut">_</span>nut</span>은 어떻게 이용하나요?</div>
 		<div class="pr penut pt20"><span class="gm">da_nut</span> 사용법</div>
 		<div class="ab1 rotate-hover">
 			<div class="pr red pt20 center p20">step 1</div>
@@ -347,7 +353,7 @@
 		</div>
 		<div class="ab3 rotate-hover">
 			<div class="pr red pt20 center p20">step 3</div>
-			<div class="box3 p20 phouse"><img src="house.png" height="300px" class="center"></div>
+			<div class="box3 p20 phouse"><img src="house.png" height="240px" class="center"></div>
 			<div class="pr navy pt20 center p20">넓어진 공간을<br>만끽한다</div>
 		</div>
 		<div class=" pr penut pt10 center t730">보관기간과 보관하시는 물품의 양에 따라 결제 금액이 달라질 수 있습니다.</div>
@@ -385,13 +391,13 @@
 	</section>
 	<section class="wrap sticky-container">
 		<div class="sticky">
-			<div class="pr lightblue pt24 center pd-t350">안 되는 것 빼고 다 되는<span class="gm">da<span class="penut">_</span>nut</span>이지만...</div>
+			<div class="pr lightblue pt32 center pd-t350">안 되는 것 빼고 다 되는<span class="gm">da<span class="penut">_</span>nut</span>이지만...</div>
 		</div>
 	</section>
 
 	<section class="bnavy slide">
 		<section class="wrap pd-t100 ">
-			<div class="pr lightblue pt24">이런 물건은 안 돼요!</div>
+			<div class="pr lightblue pt32">이런 물건은 안 돼요!</div>
 			<div class="pr penut pt20">주의사항</div>
 		</section>
 
@@ -419,7 +425,7 @@
 	</section>
 
 	<section class="wrap ptb100 center pr 10pt penut">
-		<div>이용약관<br>이미 처분된 물건에 대해서는 <span class="gm">da_nut</span>이 관여하지 않습니다.<br>보관할 물품의 상태에 따라 보관료가 책정되며 경우에 따라 가격은 변동될 수 있습니다.<br>유효 기간 만료에 대해서는 별도의 안내를 드리지 않습니다.<br>처분 시 발생한 금전적 이득의 소유권은 (주)<span class="gm">da_nut</span>에 있습니다.</div>
+		<div>이용약관<br><br>이미 처분된 물건에 대해서는 <span class="gm">da_nut</span>이 관여하지 않습니다.<br>보관할 물품의 상태에 따라 보관료가 책정되며 경우에 따라 가격은 변동될 수 있습니다.<br>유효 기간 만료에 대해서는 별도의 안내를 드리지 않습니다.<br>처분 시 발생한 금전적 이득의 소유권은 (주)<span class="gm">da_nut</span>에 있습니다.</div>
 	</section>
 
 	<section class="bnavy">
